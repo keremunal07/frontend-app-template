@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pre-commit": "npm run prettier && npm run build"
+    "pre-commit": "npm run prettier && npm run build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.11.9",
