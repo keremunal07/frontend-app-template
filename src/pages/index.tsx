@@ -23,6 +23,7 @@ export default function Home() {
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
+            <div className={styles.item}>bla bla bla</div>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
