@@ -10,7 +10,9 @@
     "lint": "next lint",
     "pre-commit": "npm run prettier && npm run build",
     "prepare": "husky install",
-    "graphql:codegen": "npx get-graphql-schema http://localhost:3000/graphql > schema.graphql && gqlg --schemaFilePath schema.graphql --destDirPath ./src/graphql/ --depthLimit 5 && graphql-codegen --config codegen.yml"
+    "graphql:codegen": "npx get-graphql-schema http://localhost:3000/graphql > schema.graphql && gqlg --schemaFilePath schema.graphql --destDirPath ./src/graphql/ --depthLimit 5 && graphql-codegen --config codegen.yml",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -29,6 +31,7 @@
     "@graphql-codegen/cli": "^2.13.11",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
+    "cypress": "^10.11.0",
     "eslint": "^8.26.0",
     "eslint-config-next": "13.0.1",
     "eslint-config-prettier": "^8.5.0",
