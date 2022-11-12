@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "pre-commit": "npm run prettier && npm run lint && npm run build",
+    "pre-commit": "lint-staged",
     "prepare": "husky install",
     "graphql:codegen": "npx get-graphql-schema http://localhost:3000/graphql > schema.graphql && gqlg --schemaFilePath schema.graphql --destDirPath ./src/graphql/ --depthLimit 5 && graphql-codegen --config codegen.yml",
     "cy:open": "cypress open",
